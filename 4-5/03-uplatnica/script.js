@@ -8,7 +8,7 @@ document.getElementById('uplatnicaForm').addEventListener('submit', function(eve
     data[key] = value;
   });
 
-  fetch('https://your-database-url.com/submit', {
+  fetch('https://localhost/submit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

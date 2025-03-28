@@ -18,6 +18,7 @@ document.getElementById('uplatnicaForm').addEventListener('submit', function(eve
   .then(response => response.json())
   .then(data => {
     console.log('Success:', data);
+    window.location.href = 'confirmation.html'; // Redirect to confirmation page
   })
   .catch((error) => {
     console.error('Error:', error);

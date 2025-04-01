@@ -44,7 +44,7 @@ app.post('/submit', async (req, res) => {
       ]
     ).then((result) => {
       console.log('Data saved:', result.rows[0]); // Log the saved data
-      res.status(201);
+      res.status(201).json({ message: 'Data successfully saved' }); // Return success message
     }).catch((error) => {	 
       console.error('Error saving data:', error);
       res.status(500).json({ error: error.message });

@@ -51,14 +51,11 @@ app.post('/submit', async (req, res) => {
     })
 })
 
-
 // Middleware za posluživanje statičkih datoteka
 app.use(express.static(path.join(__dirname))); // Poslužuje datoteke iz trenutnog direktorija
 
-
-
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on http://localhost:${port}`)
 })
 
 

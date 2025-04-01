@@ -23,7 +23,7 @@ try {
     if (!response.ok) {
       throw new Error(body.error);
     }
-    return response.json();
+    return response.body;
   })
   .then(response => {
     console.log('Success:', response.statusText);

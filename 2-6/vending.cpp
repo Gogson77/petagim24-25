@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <iomanip>
 
@@ -25,7 +25,7 @@ int main() {
         {"Cokoladica", 1.20, 10},
         {"Bananica", 0.80, 10},
         {"Keks", 1.10, 10},
-        {"Sendvic", 2.50, 10},
+        {"Sendvič", 2.50, 10},
         {"Croissant", 1.60, 10},
         {"Gumene bombone", 0.90, 10}
     };

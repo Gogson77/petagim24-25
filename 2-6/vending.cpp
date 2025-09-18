@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <iomanip>
 
@@ -25,7 +25,7 @@ int main() {
         {"Cokoladica", 1.20, 10},
         {"Bananica", 0.80, 10},
         {"Keks", 1.10, 10},
-        {"Sendvič", 2.50, 10},
+        {"Sendvic", 2.50, 10},
         {"Croissant", 1.60, 10},
         {"Gumene bombone", 0.90, 10}
     };
@@ -39,9 +39,9 @@ int main() {
     while (true) {
         cout << "\nIzaberite proizvod:\n";
         for (int i = 0; i < 16; ++i) {
-            cout << i + 1 << ". " << proizvodi[i].naziv
-                << " - " << proizvodi[i].cijena << " KM"
-                << " (preostalo: " << proizvodi[i].kolicina << ")\n";
+            cout << i+1 << ". " << proizvodi[i].naziv 
+                 << " - " << proizvodi[i].cijena << " KM"
+                 << " (preostalo: " << proizvodi[i].kolicina << ")\n";
         }
         cout << "0. Kraj kupovine i vrati visak novca\n";
         cout << "Unesite broj proizvoda: ";
@@ -57,7 +57,7 @@ int main() {
             cout << "Nepostojeci izbor!\n";
             continue;
         }
-        Proizvod& p = proizvodi[izbor - 1];
+        Proizvod &p = proizvodi[izbor-1];
         if (p.kolicina == 0) {
             cout << "Proizvod \"" << p.naziv << "\" je rasprodat!\n";
             continue;
